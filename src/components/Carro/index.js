@@ -1,4 +1,4 @@
-import {useContext, useEffect} from 'react'
+import {useContext} from 'react'
 import { UseProduct } from '../Context/useProduct'
 import { useState } from 'react'
 import { Burbuja } from '../Burbuja'
@@ -9,8 +9,6 @@ export const Carro = () => {
     const [mostrarCarro, setMostrarCarro] = useState(false)
     const [update, setUpdate] = useState(false)
     let {carrito} = useContext(UseProduct)
-
-    useEffect(()=>{},[update])
     
     
     const handleMostrarCarro = _ => setMostrarCarro(!mostrarCarro)

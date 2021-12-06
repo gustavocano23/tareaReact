@@ -37,7 +37,7 @@ function App() {
   return (
     <UseProduct.Provider value={data}>
       <Fragment>
-      <Navbar/>
+        <Navbar/>
         <Articulos />
       </Fragment>
     </UseProduct.Provider>
