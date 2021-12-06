@@ -22,7 +22,7 @@ export const Carro = () => {
 
     const handleDeleteProduct = (prod) => {
         let positionById = carrito.indexOf(prod)  
-        let confirmDelete = window.confirm(`Esta seguro que desea borrar el carrito`)
+        let confirmDelete = window.confirm(`Esta seguro que desea borrar el producto ${prod.nombre} del carrito`)
         if(confirmDelete) carrito.splice(positionById, 1)  
         setUpdate(!update)
 
